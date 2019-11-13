@@ -8,7 +8,7 @@ repository: # GitHub username/repo-name e.g. "TravelTripperWeb/bedrock"
 
 # Language Settings
 default_lang: 'en'
-languages: ['en', 'es']
+languages: ['en']
 
 # Reading Files
 include:
@@ -46,14 +46,9 @@ exclude:
   - tmp
   - vendor
 keep_files:
-  - .git
   - assets
-  - ttio_templates/bedrock/assets
-  - ttio_templates/zom/assets
 rsync_copy:
   - _assets
-  - _ttio_templates/bedrock/assets
-  - _ttio_templates/zom/assets
   
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
@@ -102,14 +97,14 @@ page_gen: #
   # - data: 'events'
   #   template: 'event_layout'
   #   dir: 'events'
-  - data: 'offers'
-    template: 'offer_layout'
-    dir: 'offers'
-    title_field: name
-  - data: 'rooms'
-    template: 'room_layout'
-    dir: 'rooms'
-    title_field: name
+  #   - data: 'offers'
+  #     template: 'offer_layout'
+  #     dir: 'offers'
+  #     title_field: name
+  #   - data: 'rooms'
+  #     template: 'room_layout'
+  #     dir: 'rooms'
+  #     title_field: name
 
 
 plugins_dir:
